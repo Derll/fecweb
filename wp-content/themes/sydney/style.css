@@ -3100,3 +3100,31 @@ Panels
 .spirit .widget-title{
     color:#a3a3a3;
 }
+
+#pgc-129-1-0{
+padding-top: 0px;
+}
+
+.sketch{
+	position: relative;
+}
+
+#pg-129-1 .panel-row-style{
+	padding: 0px 0px;
+}
+
+.sketch .widget{
+	position:absolute;
+	left: 0;
+	top: 100px;
+	padding:0px 200px;
+}
+
+.sketch .widget .textwidget{
+	line-height: 50px;
+}
+
+#pg-129-1 {
+	margin-top: 0px;
+}
+
