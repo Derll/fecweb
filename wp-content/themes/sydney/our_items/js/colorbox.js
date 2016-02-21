@@ -1,0 +1,1 @@
+$(".menu-item").colorbox({rel:'menu-item'});

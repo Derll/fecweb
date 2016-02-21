@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Gooey Menu (Version 2)</title>
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="./css/colorbox.css" />
+        <link rel="stylesheet" href="./css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+
+<nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="./images/IB.jpg" title="IdeaBank长三角高校创业公开赛." class="menu-item"><font>IdeaBank</font></a>
+  <a href="./images/FS.jpeg" title="非理(Failure Show)栏目组" class="menu-item"> <font>FailureShow</font> </a>
+  <a href="./images/未来合伙人.jpg" title="未来合伙人" class="menu-item"> <font>未来合伙人</font> </a>
+  <a href="./images/研究生素拓班.jpg" title="研究生创业素质教育拓展班" class="menu-item"> <font>研究生素拓班</font> </a>
+  <a href="./images/IMG_8797.jpg" title="浙江大学科技园e-works创业项目孵化中心" class="menu-item"> <font>e-works</font> </a>
+  <a href="./images/IMG_8466.jpg" title="未企大学" class="menu-item"> <font>未企大学</font> </a>
+  
+</nav>
+
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./js/jquery.colorbox-min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/colorbox.js"></script>
+    
+    
+    
+  </body>
+</html>

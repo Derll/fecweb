@@ -668,7 +668,7 @@ Header
 	}
 
 	.site-header.float-header {
-		background-color: rgba(0,0,0,0.9);
+		background-color: rgba(0,0,0,1);
 		padding: 5px;
 	}
 	.site-header.float-header #mainnav {
@@ -3098,7 +3098,7 @@ Panels
 		}		
 	}	
 .spirit .widget-title{
-    color:#a3a3a3;
+    color:#ffffff;
 }
 
 #pgc-129-1-0{
@@ -3116,7 +3116,7 @@ padding-top: 0px;
 .sketch .widget{
 	position:absolute;
 	left: 0;
-	top: 100px;
+	top: 50px;
 	padding:0px 200px;
 }
 
@@ -3128,3 +3128,58 @@ padding-top: 0px;
 	margin-top: 0px;
 }
 
+.students .widget-title{
+    color:#fffaf0;
+}
+
+.students .textwidget{
+	padding:0px 300px;
+	line-height: 40px;
+	color: #fffaf0;
+}
+
+.forever .textwidget{
+	line-height: 30px;
+}
+header#masthead {
+	height: 60px;
+    background-color: rgba(214,80,80,1);
+}
+
+#panel-129-3-0-0 .textwidget .iframe{
+	position:relative;
+	z-index: 1;
+}
+
+#panel-129-2-0-0 .widget-title{
+	position:absolute;
+	color:#fffaf0;
+	top: 100px;
+	left: 48%;
+	z-index: 2;
+}
+
+#panel-129-2-0-0 .textwidget #sakura{
+	position: absolute;
+	z-index: 3;
+	top: 200px;
+	padding: 0px 300px;
+	color:#fffaf0;
+	line-height: 30px;
+}
+
+.header-wrap .container .row{
+	padding: 5px 0px;
+}
+
+#panel-129-3-0-0 .textwidget .iframe{
+	position:relative;
+	z-index: 1;
+}
+
+#panel-129-3-0-0 .widget-title{
+	position:absolute;
+	top: 100px;
+	left: 10%;
+	z-index: 2;
+}
