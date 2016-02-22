@@ -30,6 +30,6 @@
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/sketch.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/spirit.js"></script>
-
+<link rel="stylesheet" href="http://www.zjufec.cn/wp-content/themes/sydney/fonts/font-awesome.css">
 </body>
 </html>
