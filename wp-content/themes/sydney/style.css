@@ -3181,7 +3181,7 @@ header#masthead {
 	z-index: 2;
 }
 
-@media screen and (min-width: 1001px){
+@media screen and (min-width: 901px){
 	.sketch .widget{
 		padding:0px 200px;
 	}
@@ -3193,7 +3193,7 @@ header#masthead {
 	}
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 900px){
 	.sketch .widget{
 		padding:0px 50px;
 	}
@@ -3207,7 +3207,7 @@ header#masthead {
 		height: 900px;
 	}
 	#pg-129-1 .panel-row-style .sketch{
-		height: 900px;
+		height: 0px;
 	}
 	#pg-129-2 .panel-row-style{
 		height: 900px;
@@ -3224,29 +3224,30 @@ header#masthead {
 	}
 }
 
-@media screen and (max-width: 700px){
-	#pg-129-1 .panel-row-style{
-		height: 1000px;
-	}
-	#pg-129-1 .panel-row-style .sketch{
-		height: 1000px;
-	}
-}
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
 	.sketch .widget{
 		padding:0px 30px;
 	}
 	#panel-129-2-0-0 .textwidget #sakura{
 		padding: 0px 30px;
 	}
-	.students .textwidget{
-		padding:0px 30px;
-	}
 	#pg-129-1 .panel-row-style{
-		height: 1200px;
+		height: 900px;
+	}
+	#pg-129-2 .panel-row-style{
+		height: 800px;
+	}
+
+	#panel-129-2-0-0 .textwidget iframe{
+		height: 800px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	#pg-129-1 .panel-row-style{
+		height: 1100px;
 	}
 	#pg-129-1 .panel-row-style .sketch{
-		height: 1200px;
+		height: 1100px;
 	}
 }

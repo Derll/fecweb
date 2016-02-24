@@ -1,9 +1,12 @@
 
 /* Copyright (C) 2013 Justin Windle, http://soulwire.co.uk */
 
-(function ( root, factory ) {
+    (function ( root, factory ) {
+        if (window.screen.width<600) {
+            return ;
+        };
 
-    if ( typeof exports === 'object' ) {
+        if ( typeof exports === 'object' ) {
 
         // CommonJS like
         module.exports = factory(root, root.document);
@@ -60,17 +63,17 @@
 
     var keyMap = {
 
-         8: 'BACKSPACE',
-         9: 'TAB',
-        13: 'ENTER',
-        16: 'SHIFT',
-        27: 'ESCAPE',
-        32: 'SPACE',
-        37: 'LEFT',
-        38: 'UP',
-        39: 'RIGHT',
-        40: 'DOWN'
-    };
+       8: 'BACKSPACE',
+       9: 'TAB',
+       13: 'ENTER',
+       16: 'SHIFT',
+       27: 'ESCAPE',
+       32: 'SPACE',
+       37: 'LEFT',
+       38: 'UP',
+       39: 'RIGHT',
+       40: 'DOWN'
+   };
 
     /*
     ----------------------------------------------------------------------
@@ -113,37 +116,37 @@
 
                 target[ key ] = source[ key ];
 
-        return target;
-    }
-
-    function proxy( method, context ) {
-
-        return function() {
-
-            method.apply( context, arguments );
-        };
-    }
-
-    function clone( target ) {
-
-        var object = {};
-
-        for ( var key in target ) {
-            
-            if ( key === 'webkitMovementX' || key === 'webkitMovementY' )
-                continue;
-
-            if ( isFunction( target[ key ] ) )
-
-                object[ key ] = proxy( target[ key ], target );
-
-            else
-
-                object[ key ] = target[ key ];
+            return target;
         }
 
-        return object;
-    }
+        function proxy( method, context ) {
+
+            return function() {
+
+                method.apply( context, arguments );
+            };
+        }
+
+        function clone( target ) {
+
+            var object = {};
+
+            for ( var key in target ) {
+
+                if ( key === 'webkitMovementX' || key === 'webkitMovementY' )
+                    continue;
+
+                if ( isFunction( target[ key ] ) )
+
+                    object[ key ] = proxy( target[ key ], target );
+
+                else
+
+                    object[ key ] = target[ key ];
+            }
+
+            return object;
+        }
 
     /*
     ----------------------------------------------------------------------
@@ -173,23 +176,23 @@
 
         var eventMap = [
 
-            context.eventTarget || context.element,
+        context.eventTarget || context.element,
 
-                pointer, 'mousedown', 'touchstart',
-                pointer, 'mousemove', 'touchmove',
-                pointer, 'mouseup', 'touchend',
-                pointer, 'click',
-                pointer, 'mouseout',
-                pointer, 'mouseover',
+        pointer, 'mousedown', 'touchstart',
+        pointer, 'mousemove', 'touchmove',
+        pointer, 'mouseup', 'touchend',
+        pointer, 'click',
+        pointer, 'mouseout',
+        pointer, 'mouseover',
 
-            doc,
+        doc,
 
-                keypress, 'keydown', 'keyup',
+        keypress, 'keydown', 'keyup',
 
-            win,
+        win,
 
-                active, 'focus', 'blur',
-                resize, 'resize'
+        active, 'focus', 'blur',
+        resize, 'resize'
         ];
 
         var keys = {}; for ( key in keyMap ) keys[ keyMap[ key ] ] = false;
@@ -375,23 +378,23 @@
 
             context.dragging =
 
-                /down|start/.test( type ) ? true :
+            /down|start/.test( type ) ? true :
 
-                /up|end/.test( type ) ? false :
+            /up|end/.test( type ) ? false :
 
-                context.dragging;
+            context.dragging;
 
             while( min )
 
                 isString( eventMap[ min ] ) ?
 
-                    trigger( context[ eventMap[ min-- ] ], event ) :
+            trigger( context[ eventMap[ min-- ] ], event ) :
 
-                isString( eventMap[ max ] ) ?
+            isString( eventMap[ max ] ) ?
 
-                    trigger( context[ eventMap[ max++ ] ], event ) :
+            trigger( context[ eventMap[ max++ ] ], event ) :
 
-                min = 0;
+            min = 0;
         }
 
         function keypress( event ) {
@@ -546,15 +549,15 @@
 
                     case CANVAS:
 
-                        return element.getContext( '2d', options );
+                    return element.getContext( '2d', options );
 
                     case WEBGL:
 
-                        return element.getContext( 'webgl', options ) || element.getContext( 'experimental-webgl', options );
+                    return element.getContext( 'webgl', options ) || element.getContext( 'experimental-webgl', options );
 
                     case DOM:
 
-                        return element.canvas = element;
+                    return element.canvas = element;
                 }
 
             })();
@@ -629,3 +632,4 @@
     return Sketch;
 
 }));
+
