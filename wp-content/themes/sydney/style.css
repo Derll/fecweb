@@ -3117,7 +3117,6 @@ padding-top: 0px;
 	position:absolute;
 	left: 0;
 	top: 50px;
-	padding:0px 200px;
 }
 
 .sketch .widget .textwidget{
@@ -3133,7 +3132,6 @@ padding-top: 0px;
 }
 
 .students .textwidget{
-	padding:0px 300px;
 	line-height: 40px;
 	color: #fffaf0;
 }
@@ -3163,7 +3161,6 @@ header#masthead {
 	position: absolute;
 	z-index: 3;
 	top: 200px;
-	padding: 0px 300px;
 	color:#fffaf0;
 	line-height: 30px;
 }
@@ -3182,4 +3179,74 @@ header#masthead {
 	top: 100px;
 	left: 10%;
 	z-index: 2;
+}
+
+@media screen and (min-width: 1001px){
+	.sketch .widget{
+		padding:0px 200px;
+	}
+	#panel-129-2-0-0 .textwidget #sakura{
+		padding: 0px 300px;
+	}
+	.students .textwidget{
+		padding:0px 300px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.sketch .widget{
+		padding:0px 50px;
+	}
+	#panel-129-2-0-0 .textwidget #sakura{
+		padding: 0px 50px;
+	}
+	.students .textwidget{
+		padding:0px 50px;
+	}
+	#pg-129-1 .panel-row-style{
+		height: 900px;
+	}
+	#pg-129-1 .panel-row-style .sketch{
+		height: 900px;
+	}
+	#pg-129-2 .panel-row-style{
+		height: 900px;
+	}
+
+	#panel-129-2-0-0 .textwidget iframe{
+		height: 900px;
+	}
+	#panel-129-3-0-0 .panel-widget-style .widget-title{
+		top: 450px;
+	}
+	#pg-129-3 .panel-row-style{
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	#pg-129-1 .panel-row-style{
+		height: 1000px;
+	}
+	#pg-129-1 .panel-row-style .sketch{
+		height: 1000px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.sketch .widget{
+		padding:0px 30px;
+	}
+	#panel-129-2-0-0 .textwidget #sakura{
+		padding: 0px 30px;
+	}
+	.students .textwidget{
+		padding:0px 30px;
+	}
+	#pg-129-1 .panel-row-style{
+		height: 1200px;
+	}
+	#pg-129-1 .panel-row-style .sketch{
+		height: 1200px;
+	}
 }

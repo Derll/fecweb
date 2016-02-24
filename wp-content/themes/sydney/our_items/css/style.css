@@ -4,6 +4,8 @@ body {
   text-align: center;
 }
 
+
+
 a {
   color: inherit;
 }
@@ -44,6 +46,15 @@ h1 {
   transition: -webkit-transform ease-out 200ms;
   transition: transform ease-out 200ms;
   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+@media screen and (max-width: 900px){
+  body{
+    zoom:40%;
+  }
+  .menu-item, .menu-open-button{
+    top: 400px;
+  }
 }
 
 .menu-open {
@@ -216,4 +227,6 @@ h1 {
 .menu-item font{
   margin-top:300px;
 }
+
+
 
