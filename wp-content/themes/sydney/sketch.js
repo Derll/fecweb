@@ -2,10 +2,13 @@
 /* Copyright (C) 2013 Justin Windle, http://soulwire.co.uk */
 
     (function ( root, factory ) {
-        if (window.screen.width<600) {
+        if (window.screen.availWidth<1000) {
             return ;
         };
-
+        var ua = navigator.userAgent.toLowerCase();
+          if(ua.match(/MicroMessenger/i)=="micromessenger") {
+            return ;
+          } 
         if ( typeof exports === 'object' ) {
 
         // CommonJS like
