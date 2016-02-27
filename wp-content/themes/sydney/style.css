@@ -3100,12 +3100,17 @@ Panels
 .spirit .widget-title{
     color:#ffffff;
 }
+ 
+ /*#pgc-129-1-0-0{
+padding-top: 100px;
+}*/
 
-#pgc-129-1-0{
-padding-top: 0px;
+#pg-129-1{
+	height: 420px;
+	margin-top: 200px;
 }
 
-.sketch{
+/*.sketch{
 	position: relative;
 }
 
@@ -3117,15 +3122,26 @@ padding-top: 0px;
 	position:absolute;
 	left: 0;
 	top: 50px;
+}*/
+
+#pg-129-1 .panel-row-style .widget .textwidget #fecInstructor{
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 32px;
+	padding:0px 20px;
+	text-align:center;
 }
 
-.sketch .widget .textwidget{
-	line-height: 50px;
+#pg-129-1 .panel-row-style .widget .textwidget #paragraph{
+	line-height: 30px;
+	margin-top: 50px;
+	padding:0px 60px;
+	text-align: center;
 }
 
-#pg-129-1 {
+/*#pg-129-1 {
 	margin-top: 0px;
-}
+}*/
 
 .students .widget-title{
     color:#fffaf0;
@@ -3181,10 +3197,18 @@ header#masthead {
 	z-index: 2;
 }
 
+#sakura #student1{
+	text-align: center;
+}
+
+#sakura #student2{
+	text-align: center;
+}
+
 @media screen and (min-width: 901px){
-	.sketch .widget{
+	/*.sketch .widget{
 		padding:0px 200px;
-	}
+	}*/
 	#panel-129-2-0-0 .textwidget #sakura{
 		padding: 0px 300px;
 	}
@@ -3194,21 +3218,21 @@ header#masthead {
 }
 
 @media screen and (max-width: 900px){
-	.sketch .widget{
+	/*.sketch .widget{
 		padding:0px 50px;
-	}
+	}*/
 	#panel-129-2-0-0 .textwidget #sakura{
 		padding: 0px 50px;
 	}
 	.students .textwidget{
 		padding:0px 50px;
 	}
-	#pg-129-1 .panel-row-style{
+	/*#pg-129-1 .panel-row-style{
 		height: 900px;
 	}
 	#pg-129-1 .panel-row-style .sketch{
 		height: 0px;
-	}
+	}*/
 	#pg-129-2 .panel-row-style{
 		height: 900px;
 	}
@@ -3225,15 +3249,15 @@ header#masthead {
 }
 
 @media screen and (max-width: 500px){
-	.sketch .widget{
+	/*.sketch .widget{
 		padding:0px 30px;
-	}
+	}*/
 	#panel-129-2-0-0 .textwidget #sakura{
 		padding: 0px 30px;
 	}
-	#pg-129-1 .panel-row-style{
+	/*#pg-129-1 .panel-row-style{
 		height: 900px;
-	}
+	}*/
 	#pg-129-2 .panel-row-style{
 		height: 800px;
 	}
@@ -3244,10 +3268,10 @@ header#masthead {
 }
 
 @media screen and (max-width: 400px){
-	#pg-129-1 .panel-row-style{
+	/*#pg-129-1 .panel-row-style{
 		height: 1100px;
 	}
 	#pg-129-1 .panel-row-style .sketch{
 		height: 1100px;
-	}
+	}*/
 }
