@@ -3185,7 +3185,7 @@ header#masthead {
 	padding: 5px 0px;
 }
 
-#panel-129-3-0-0 .textwidget .iframe{
+/*#panel-129-3-0-0 .textwidget .iframe{
 	position:relative;
 	z-index: 1;
 }
@@ -3195,7 +3195,7 @@ header#masthead {
 	top: 100px;
 	left: 10%;
 	z-index: 2;
-}
+}*/
 
 #sakura #student1{
 	text-align: center;
@@ -3203,6 +3203,13 @@ header#masthead {
 
 #sakura #student2{
 	text-align: center;
+}
+.panel-widget-style .textwidget{
+	text-align: center;
+}
+
+#masthead{
+	padding: 10px 0px;
 }
 
 @media screen and (min-width: 901px){
@@ -3243,9 +3250,9 @@ header#masthead {
 	#panel-129-3-0-0 .panel-widget-style .widget-title{
 		top: 450px;
 	}
-	#pg-129-3 .panel-row-style{
+	/*#pg-129-3 .panel-row-style{
 		height: 600px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 500px){

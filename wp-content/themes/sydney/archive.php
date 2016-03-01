@@ -46,9 +46,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php 
+<!--<?php 
 	if ( get_theme_mod('blog_layout','classic') == 'classic' ) :
 	get_sidebar();
 	endif;
-?>
+?>-->
 <?php get_footer(); ?>

@@ -34,7 +34,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php if ( get_theme_mod('fullwidth_single', 0) != 1 ) {
+<!--<?php if ( get_theme_mod('fullwidth_single', 0) != 1 ) {
 	get_sidebar();
-} ?>
+} ?>-->
 <?php get_footer(); ?>
